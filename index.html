@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="startScreen" class="container">
+        <ul class="title"><li>Rock</li><li>Paper</li><li>Scrissors</li></ul>
+        <div class="image-container">
+            <img src="images/start.png" alt="Rock Paper Scissors" class="start-image" id="start">
+        </div>
+        <p>by Roland Varga</p>
+        <button onclick="startGame()" id="startgame">Start Game</button>
+    </div>
+
+    <div id="gameScreen" class="container" style="display: none;">
+        <h1>Rock, Paper, Scissors</h1>
+        <div class="buttons">
+            <button onclick="playGame('rock')">
+                <img src="images/rock.png" alt="Rock">
+                Rock
+            </button>
+            <button onclick="playGame('paper')">
+                <img src="images/paper.png" alt="Paper">
+                Paper
+            </button>
+            <button onclick="playGame('scissors')">
+                <img src="images/scrissors.png" alt="Scissors">
+                Scissors
+            </button>
+        </div>
+        <p id="resultMessage"></p>
+        <p id="score">Player: 0 - Computer: 0</p>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Roland Varga. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
